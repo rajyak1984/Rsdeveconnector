@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs');
 const User = require('../../models/User');
 
 //@ route    GET api/users/test
-//@desc      Tests post route
+//@desc      Tests users route
 //@access    Public
 router.get('/test', (req, res) => res.json({
     msg: 'Users Works'
@@ -25,7 +25,7 @@ User.findOne({email: req.body.email})
         const avatar = gravatar.url(req.body.email, {
             s: '200',//Size
             r:'pg', //Rating
-            d: 'mm' //default
+            d: 'mm' //Default
         });
 
         const newUser = new User({
