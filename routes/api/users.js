@@ -4,7 +4,7 @@ const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 
 //Load User model
-const User = require('../../models/User');
+const User = require('../../config/models/User');
 
 //@ route    GET api/users/test
 //@desc      Tests users route
