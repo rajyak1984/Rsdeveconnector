@@ -53,7 +53,7 @@ import classnames from 'classnames';
               value ={this.state.name}
               onChange={this.onChange}
               />
-              {errors.name && (<div classname ="invalid feedback">{errors.name}</div>)}
+              {errors.name && (<div className ="invalid feedback">{errors.name}</div>)}
             </div>
             <div className="form-group">
               <input 
@@ -66,7 +66,7 @@ import classnames from 'classnames';
               value={this.state.email}
               onChange={this.onChange}
               />
-               {errors.email && (<div classname ="invalid feedback">{errors.email}</div>)}
+               {errors.email && (<div className ="invalid feedback">{errors.email}</div>)}
             <div/>
               <small className="form-text text-muted"> Use a Gravatar email or Gravatar image. </small>
             </div>
