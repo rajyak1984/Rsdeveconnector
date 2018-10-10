@@ -64,7 +64,9 @@ import { registerUser} from '../../actions/authActions';
               value ={this.state.name}
               onChange={this.onChange}
               />
-              {errors.name && (<div className ="invalid feedback">{errors.name}</div>)}
+              {errors.name && (
+                <div className ="invalid feedback">{errors.name}</div>
+                )}
             </div>
             <div className="form-group">
               <input 
